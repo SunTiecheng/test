@@ -1,0 +1,36 @@
+<!DOCTYPE html	<!var txt=document.body.creatTextNode("PSM        Ours")document.body.appendChild(txt)>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+window.onload=function(){
+
+    for(var i=160;i<200;i++){
+    var myImage = document.createElement("img");
+    myImage.src = "PSMerrors/000"+i+"_10.png";
+    myImage.width = 600;
+    myImage.height = 300;
+	myImage.name="PSM_"+i
+	myImage.vspace=5
+	myImage.style.position="relative";
+	myImage.style.left="10px";
+	myImage.title="PSM"+i
+	var myImage2 = document.createElement("img");
+    myImage2.src = "srstereoerror/000"+i+"_10.png";
+    myImage2.width = 600;
+    myImage2.height = 300;
+	myImage2.name="Ours_"+i
+	myImage2.vspace=5
+	myImage2.style.position="relative";
+	myImage2.style.left="100px";
+	myImage2.title="Ours"+i
+    document.body.appendChild(myImage);
+	document.body.appendChild(myImage2);
+	}
+	}
+</script>
+</body>
+</html>
